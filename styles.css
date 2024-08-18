@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar a, .navbar span {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+#saldo {
+    font-family: inherit; 
+    margin-left: 5px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    width: 90%; 
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option input[type="radio"] {
+    display: none;
+}
+
+.option img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.option input[type="radio"]:checked + label img {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: black;
+}
+
+/* Formatação de tela para tablets */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+/* Formatação de tela para celulares */
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .navbar-left, .navbar-right {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .option img {
+        width: 120px;
+        height: 120px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+}

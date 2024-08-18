@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Bairro Inteligente</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h3>MEU BAIRRO INTELIGENTE</h3>
+        </div>
+        <div class="navbar-right">
+            <h3>Saldo Bancário:</h3>
+            <span id="saldo">0,00</span>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>ESCOLHA UMA DAS ÁREAS PARA RECEBER INVESTIMENTO</h1>
+        <form id="voteForm">
+            <div class="grid-container">
+                <div class="option">
+                    <input type="radio" id="idEducacao" name="opcao">
+                    <label for="idEducacao">
+                        <img src="images/educacao.png" alt="icone de educacao">
+                        <h2>EDUCAÇÃO</h2>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="idSaude" name="opcao">
+                    <label for="idSaude">
+                        <img src="images/saude.png" alt="icone de saude">
+                        <h2>SAÚDE</h2>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="idSeguranca" name="opcao">
+                    <label for="idSeguranca">
+                        <img src="images/seguranca.png" alt="icone de seguranca">
+                        <h2>SEGURANÇA</h2>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="idLazer" name="opcao">
+                    <label for="idLazer">
+                        <img src="images/lazer.png" alt="icone de lazer">
+                        <h2>LAZER</h2>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="idHabitacao" name="opcao">
+                    <label for="idHabitacao">
+                        <img src="images/habitacao.png" alt="icone de habitacao">
+                        <h2>HABITAÇÃO</h2>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="idAssistenciaSocial" name="opcao">
+                    <label for="idAssistenciaSocial">
+                        <img src="images/assistenciaSocial.png" alt="icone assistencia social">
+                        <h2>ASSISTÊNCIA SOCIAL</h2>
+                    </label>
+                </div>
+            </div>
+            <button type="submit"><h3>CONFIRMA</h3></button>
+        </form>
+    </div>
+</body>
+</html>
